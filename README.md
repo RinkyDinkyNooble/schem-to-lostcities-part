@@ -28,7 +28,7 @@ The script monitors a folder for new schematic files, archives them, and convert
 - [amulet-nbt](https://pypi.org/project/amulet-nbt/) 2.1.5  
 - [watchdog](https://pypi.org/project/watchdog/) 6.0.0  
 - **Minecraft** with **WorldEdit** installed  
-  - Tested with **Forge WorldEdit 7.2.15** and **Lost Cities 1.20-7.4.3**
+  - Tested with **Forge 47.4.0, WorldEdit 7.2.15** and **Lost Cities 1.20-7.4.3**
 
 ---
 
