@@ -122,7 +122,7 @@ Now you can rinse and repeat without having to manually convert each schematic i
 ## Demo
 
 Minecraft Build:
-![Image of a campsite build in minecraft](Demo.png)
+![Image of a campsite build in minecraft]([Demo.png](https://github.com/RinkyDinkyNooble/schem-to-lostcities-part/blob/main/Demo.PNG))
 
 JSON Output:
 ```json
