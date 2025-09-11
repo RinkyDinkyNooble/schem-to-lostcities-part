@@ -347,3 +347,15 @@ JSON Output:
     ]
 }
 ```
+
+---
+
+## Errors
+
+### 1. Error converting `your file`: buffer is empty
+This likely means the .schem file you are trying to convert is currently empty. If you used the schematics folder in world edit config, you may get this issue since the code runs immediately once it detects the .schem and it world edit may not have finished writing to the file before the python script attempts conversion. 
+
+**Solution:**
+Add a folder anywhere named anything you want. Then take that folder path and use it as the input folder path in the python script. Now, once you have all your .schem files and you know they are complete (you can test this by loading it into your minecraft world to paste it), you can manually plop them into the input folder you just made (that the python file is monitoring instead of the schematics folder prior).
+
+---
