@@ -17,13 +17,27 @@ for d in [INPUT_DIR, ARCHIVE_DIR, OUTPUT_DIR]:
     os.makedirs(d, exist_ok=True)
 
 
-symbols = list("αβγδεζηθικλμνξοπρστυφχψω"
-               "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ"
-               "∑∆∏∫√∞≈≠≤≥∧∨⊂⊃⊆⊇⊕⊗⊥∴∵"
-               "∠∡⊾≅≡∝∂∇∴∵ℵℶℷℸ"
-               "ЖДФИЛПЦЧШЩЭЮЯ"
-               "ぁあぃいぅうぇえぉおかきくけこさしすせそ"
-               "たちつてとなにぬねのまみむめも")
+symbols = list(
+    "αβγδεζηθικλμνξοπρστυφχψω"          # Greek lowercase
+    "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ"          # Greek uppercase
+    "∑∆∏∫√∞≈≠≤≥∧∨⊂⊃⊆⊇⊕⊗⊥∴∵∠∡⊾≅≡∝∂∇ℵℶℷℸ"  # Math & logic symbols
+    "ЖДФИЛПЦЧШЩЭЮЯ"                     # Cyrillic uppercase
+    "ぁあぃいぅうぇえぉお"               # Japanese Hiragana vowels
+    "かきくけこさしすせそ"               # Hiragana consonants 1
+    "たちつてとなにぬねの"               # Hiragana consonants 2
+    "まみむめも"                         # Hiragana consonants 3
+    "אבגדהוזחטיכלמנסעפצקרשת"           # Hebrew alphabet
+    "अआइईउऊऋऌएऐओऔकखगघङचछज"            # Hindi (Devanagari) selection
+    "한글ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ"    # Korean Hangul jamo
+    "กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธน"       # Thai
+    "აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ" # Georgian
+    "ԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՍՎՏՐՑՈւՓՔևՕՖ" # Armenian
+    "அஆஇஈஉஊஎஏஐஒஓஔகஙசஞடணதநபமயரலவழளறனஷஸஹ" # Tamil
+    "ກຂຄງຈຊຍດຕນບປຜຝພຟມຢຣລວສຫຬອຮ"           # Lao
+    "ሀሁሂሃሄህሆለሉሊላሌልሎመሙሚማሜምሞ"             # Ethiopic
+    "ᎠᎡᎢᎣᎤᎥᎦᎧᎨᎩᎪᎫᎬᎭᎮᎯᎰᎱᎲᎳᎴᎵᎶᎷ"         # Cherokee
+    "ཀཁགངཅཆཇཉཏཐདནཙཚཛཝཞཟའཡརལཤཥསཧཨ"         # Tibetan
+)
 
 def schem_to_slices(path, json_path):
     # load schematic
